@@ -11,7 +11,7 @@ Router.map(function() {
   this.route('contact');
   this.route('president');
   //this.route('wordCount')
-  this.route('wordCount', { path: '/wordCount/:count_id' });
+  this.route('wordCount', { path: '/wordcountAPI/:count_id' });
 });
 
 export default Router;
