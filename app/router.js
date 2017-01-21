@@ -12,6 +12,18 @@ Router.map(function() {
   this.route('president');
   //this.route('wordCount')
   this.route('wordCount', { path: '/wordcountAPI/:count_id' });
+  this.route('atpastTweets');
+  this.route('api');
+  this.route('getTweets');
+  this.route('getTweetsResult',  {path: '/getTweetsResult/:keyword'});
+  this.route('getTweetsSent');
+  this.route('getTweetsSentResult',  {path: '/getTweetsSentResult/:keyword'});
+  this.route('getSent');
+  this.route('getSentResults',  {path: '/getSentResults/:sent'});
+  this.route('getAttitude');
+  this.route('getAttitudeResults',  {path: '/getAttitudeResults/:text'});
+  this.route('getWordCount');
+  this.route('getWordCountResults',  {path: '/getWordCountResults/:url'});
 });
 
 export default Router;
