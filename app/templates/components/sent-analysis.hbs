@@ -1,0 +1,9 @@
+<h1>Sentiment Analysis Engine</h1>
+
+<form>
+  <div class="sent-analysis">
+    <label for="sent">Text</label><br>
+    {{textarea value=sent id="sent" cols="80" rows="6"}}
+  <button class="btn btn-primary" {{action 'sentLookup' }}>Submit</button>
+  </div>
+</form>

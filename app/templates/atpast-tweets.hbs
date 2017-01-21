@@ -1,0 +1,11 @@
+<br>  
+{{textarea value=keyword cols="10" rows="2"}}
+<br>
+<button type="button" {{action "pasttweets" keyword}}>Get Tweets</button>
+
+
+<ul>
+  {{#each actions as |legislator|}}
+    <li> {{legislator.created}} {{legislator.tweet}}<br></li>
+  {{/each}}
+</ul>

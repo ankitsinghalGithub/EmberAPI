@@ -1,0 +1,22 @@
+{{sent-analysis sentLookup="sentLookup"}}
+
+<br>
+  {{#link-to 'getSent' class="button"}}
+    Reset
+  {{/link-to}}
+
+<br>
+
+<div class="jumbo">
+  <div class="right tomster"></div>
+<h3>Results: </h3>
+
+<ul>
+  {{#each model as |legislator|}}
+    <b><u>Text</u>:</b> <p>{{legislator.text}}</p>
+		<b><u>Sentiment </u>:</b><p>{{legislator.polarity}}</p>
+		<br><br>
+
+  {{/each}}
+</ul>
+</div>

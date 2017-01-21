@@ -1,0 +1,25 @@
+{{tweets-sent tweetsSentLookup="tweetsSentLookup"}}
+
+<br>
+  {{#link-to 'getTweetsSent' class="button"}}
+    Reset
+  {{/link-to}}
+
+<br>
+
+<div class="jumbo">
+  <div class="right tomster"></div>
+<h3>Results: </h3>
+
+<ul>
+  {{#each model as |legislator|}}
+    <li> <b><u>Tweet</u>:</b> <p>{{legislator.tweet}}</p>
+    	 <b><u>Sentiment</u>:</b> {{legislator.polarity}} <br><br>
+       <b><u>Time </u>:</b> {{legislator.created-at}}
+	</li>
+
+	<br><br>
+
+  {{/each}}
+</ul>
+</div>

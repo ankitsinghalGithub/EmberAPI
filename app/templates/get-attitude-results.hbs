@@ -1,0 +1,41 @@
+{{attitude-analysis sentLookup="attitudeLookup"}}
+
+<br>
+  {{#link-to 'getAttitude' class="button"}}
+    Reset
+  {{/link-to}}
+
+<br>
+
+<div class="jumbo">
+  <div class="right tomster"></div>
+<h3>Results: </h3>
+
+<ul>
+  {{#each model as |legislator|}}
+    <li> <b><u>Text</u>:</b> <p>{{legislator.text}}</p>
+		<b><u>Emotion Score </u>:</b>
+    <p>
+    <li>ANGER : {{legislator.emotion_score.ANGER}}</li>
+    <li>DISTRESS : {{legislator.emotion_score.DISTRESS}}</li>
+    <li>FEAR : {{legislator.emotion_score.FEAR}}</li>
+    <li>HAPPY : {{legislator.emotion_score.HAPPY}}</li>
+    <li>SAD : {{legislator.emotion_score.SAD}}</li>
+    </p>
+    <br>
+    <b><u>Personality Score </u>:</b>
+    <p>
+    <li>AGREEABLENESS : {{legislator.personality_score.AGREEABLENESS}}</li>
+    <li>CONSCIENTIOUS : {{legislator.personality_score.CONSCIENTIOUS}}</li>
+    <li>EXTROVERT : {{legislator.personality_score.EXTROVERT}}</li>
+    <li>NEUROTIC : {{legislator.personality_score.NEUROTIC}}</li>
+    <li>OPEN : {{legislator.personality_score.OPEN}}</li>
+    </p>
+
+	</li>
+
+	<br><br>
+
+  {{/each}}
+</ul>
+</div>

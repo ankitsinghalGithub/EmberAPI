@@ -1,0 +1,24 @@
+{{past-tweets pastTweetsLookup="pastTweetsLookup"}}
+
+<br>
+  {{#link-to 'getTweets' class="button"}}
+    Reset
+  {{/link-to}}
+
+<br>
+
+<div class="jumbo">
+  <div class="right tomster"></div>
+<h3>Results: </h3>
+
+<ul>
+  {{#each model as |legislator|}}
+    <li> <b><u>Tweet</u>:</b> <p>{{legislator.tweet}}</p>
+		<b><u>Time </u>:</b>{{legislator.created_at}}
+	</li>
+
+	<br><br>
+
+  {{/each}}
+</ul>
+</div>

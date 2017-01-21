@@ -1,0 +1,9 @@
+<h1>Last 10 Tweets</h1>
+
+<form>
+  <div class="past-tweets">
+    <label for="Keyword">Keyword</label>
+    {{input value=keyword id="keyword"}}
+  <button class="btn btn-primary" {{action 'pastTweetsLookup' }}>Submit</button>
+  </div>
+</form>

@@ -1,0 +1,10 @@
+<h1>Attitude Analysis Engine (Emotion and Personality)</h1>
+
+<form>
+  <div class="attitude">
+    <label for="text">Text</label><br>
+    {{textarea value=text id="text" cols="80" rows="10"}}
+  <button class="btn btn-primary" {{action 'attitudeLookup' }}>Submit</button>
+  </div>
+</form>
+

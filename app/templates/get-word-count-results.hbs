@@ -1,0 +1,24 @@
+{{nltk-engine wordCountLookup="wordCountLookup"}}
+
+<br>
+  {{#link-to 'getWordCount' class="button"}}
+    Reset
+  {{/link-to}}
+
+<br>
+
+<div class="jumbo">
+  <div class="right tomster"></div>
+<h3>Results: </h3>
+
+<ul>
+  {{#each model as |legislator|}}
+    <li> <b><u>word</u>:</b> {{legislator.word}} <br>
+    	 <b><u>count</u>:</b> {{legislator.count}} <br><br>
+	</li>
+
+	<br><br>
+
+  {{/each}}
+</ul>
+</div>
