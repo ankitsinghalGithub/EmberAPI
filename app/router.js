@@ -9,10 +9,6 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('about');
   this.route('contact');
-  this.route('president');
-  //this.route('wordCount')
-  this.route('wordCount', { path: '/wordcountAPI/:count_id' });
-  this.route('atpastTweets');
   this.route('api');
   this.route('getTweets');
   this.route('getTweetsResult',  {path: '/getTweetsResult/:keyword'});

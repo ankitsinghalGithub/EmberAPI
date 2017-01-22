@@ -1,24 +1,42 @@
 <div class="container">
   <div class="menu">
-    {{#link-to 'index'}}
+
+    {{#link-to 'about'}}
       <h1 class="left">
         <em>Artadys</em>
       </h1>
     {{/link-to}}
-    <div class="left links">
-      {{#link-to 'about'}}
-        About
+
+                
+      {{#link-to 'getTweets' }}
+        Past Tweets Engine
       {{/link-to}}
       
-      {{#link-to 'api'}}
-        API
+      {{#link-to 'getTweetsSent'}}
+        Tweets Sentiment Engine
       {{/link-to}}
 
+      {{#link-to 'getSent'}}
+        Sentiment Analysis Engine
+      {{/link-to}}
+      
+      {{#link-to 'getAttitude'}}
+        Attitude Analysis Engine
+      {{/link-to}}
+      
+      {{#link-to 'getWordCount'}}
+        NLTK Word Count Engine
+      {{/link-to}}
+      
       
       {{#link-to 'contact'}}
         Contact
       {{/link-to}}
-    </div>
+
+      {{#link-to 'about'}}
+        About
+      {{/link-to}}
+  
   </div>
   
   <div class="body">
