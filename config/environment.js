@@ -6,28 +6,14 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
-
-    firebase: {
-    apiKey: "AIzaSyClfv-apWqaOqweTx70NWgrivNEZ8OjZgo",
-    authDomain: "ankitember.firebaseapp.com",
-    databaseURL: "https://ankitember.firebaseio.com",
-    storageBucket: "ankitember.appspot.com",
-    messagingSenderId: "839689762130"
-  },
-
-
-  // if using ember-cli-content-security-policy
-  contentSecurityPolicy: {
-    'script-src': "'self' 'unsafe-eval' apis.google.com",
-    'frame-src': "'self' https://*.firebaseapp.com",
-    'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
-  },
-
-
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+      },
+      EXTEND_PROTOTYPES: {
+        // Prevent Ember Data from overriding Date.parse.
+        Date: false
       }
     },
 
@@ -62,5 +48,3 @@ module.exports = function(environment) {
 
   return ENV;
 };
-
-

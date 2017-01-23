@@ -1,45 +1,7 @@
+
 <div class="container">
-  <div class="menu">
+      {{partial 'navbar'}}
+          {{outlet}}
+    </div>
 
-    {{#link-to 'about'}}
-      <h1 class="left">
-        <em>Artadys</em>
-      </h1>
-    {{/link-to}}
 
-                
-      {{#link-to 'getTweets' }}
-        Past Tweets Engine
-      {{/link-to}}
-      
-      {{#link-to 'getTweetsSent'}}
-        Tweets Sentiment Engine
-      {{/link-to}}
-
-      {{#link-to 'getSent'}}
-        Sentiment Analysis Engine
-      {{/link-to}}
-      
-      {{#link-to 'getAttitude'}}
-        Attitude Analysis Engine
-      {{/link-to}}
-      
-      {{#link-to 'getWordCount'}}
-        NLTK Word Count Engine
-      {{/link-to}}
-      
-      
-      {{#link-to 'contact'}}
-        Contact
-      {{/link-to}}
-
-      {{#link-to 'about'}}
-        About
-      {{/link-to}}
-  
-  </div>
-  
-  <div class="body">
-    {{outlet}}
-  </div>
-</div>

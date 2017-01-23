@@ -1,0 +1,35 @@
+<nav class="navbar navbar-inverse">
+
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+
+			{{#link-to 'index' class="navbar-brand"}} Main Page bar {{/link-to}}
+		</div>
+
+		<div class="collapse navbar-collapse" id="main-navbar">
+			<ul class="nav navbar-nav">
+			{{#link-to 'about' tagName="li"}}<a href="">About</a>{{/link-to}}
+			{{#link-to 'getAttitude' tagName="li"}}<a href="">ATTITUDES ANALYSIS Engine</a>{{/link-to}}
+			{{#link-to 'getTweets' tagName="li"}}<a href="">Past Tweets Engine</a>{{/link-to}}
+			{{#link-to 'getTweetsSent' tagName="li"}}<a href="">Tweets Sentiment Engine</a>{{/link-to}}
+			{{#link-to 'getSent' tagName="li"}}<a href="">Sentiment Text Engine</a>{{/link-to}}
+			{{#link-to 'getWordCount' tagName="li"}}<a href="">NLTK (natural language processing) Engine</a>{{/link-to}}
+			{{#link-to 'contact' tagName="li"}}<a href="">Contact</a>{{/link-to}}
+			</ul>
+		</div>
+	</div>
+	
+</nav>
