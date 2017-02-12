@@ -1,0 +1,34 @@
+{{watson-concept watsonConceptLookup="watsonConceptLookup"}}
+
+<br>
+  {{#link-to 'watsonConcept' class="button"}}
+    Reset
+  {{/link-to}}
+
+<br>
+
+<div class="jumbo">
+  <div class="right tomster"></div>
+<h3>Results: </h3>
+
+<b>Area Chart:</b>
+{{area-chart data=model}}
+
+<br>
+
+<b>Bar Chart:</b>
+{{bar-chart data=model}}
+
+<br>
+<b>Pie Chart:</b>
+{{pie-chart data=model}}
+
+<br>
+<b>Line Chart:</b>
+{{line-chart data=model}}
+
+<br>
+<b>Scatter Chart:</b>
+{{scatter-chart data=model}}
+
+</div>

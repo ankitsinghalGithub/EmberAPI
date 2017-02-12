@@ -20,6 +20,8 @@ Router.map(function() {
   this.route('getAttitudeResults',  {path: '/getAttitudeResults/:text'});
   this.route('getWordCount');
   this.route('getWordCountResults',  {path: '/getWordCountResults/:url'});
+  this.route('watsonConcept');
+  this.route('getwatsonConceptResults',  {path: '/getwatsonConceptResults/:url'});
 });
 
 export default Router;

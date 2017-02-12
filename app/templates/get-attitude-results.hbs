@@ -11,13 +11,14 @@
   <div class="right tomster"></div>
 <h3>Results: </h3>
 
+
 <ul>
   {{#each model as |legislator|}}
     <li> <b><u>Text</u>:</b> <p>{{legislator.text}}</p>
 		<b><u>Emotion Score </u>:</b>
     <p>
     <li>ANGER : {{legislator.emotion_score.ANGER}}</li>
-    <li>DISTRESS : {{legislator.emotion_score.DISTRESS}}</li>
+    <li>DISGUST : {{legislator.emotion_score.DISGUST}}</li>
     <li>FEAR : {{legislator.emotion_score.FEAR}}</li>
     <li>HAPPY : {{legislator.emotion_score.HAPPY}}</li>
     <li>SAD : {{legislator.emotion_score.SAD}}</li>
